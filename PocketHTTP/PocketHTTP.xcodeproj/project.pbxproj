@@ -1,0 +1,522 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A07859B1E39BA2700C987EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A07859A1E39BA2700C987EF /* AppDelegate.swift */; };
+		7A0785A01E39BA2700C987EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A07859E1E39BA2700C987EF /* Main.storyboard */; };
+		7A0785A21E39BA2700C987EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A0785A11E39BA2700C987EF /* Assets.xcassets */; };
+		7A0785AF1E39BE9E00C987EF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7A0785AE1E39BE9E00C987EF /* Podfile */; };
+		7A4B414F1E41986A00D16EA2 /* VariableEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4B414E1E41986A00D16EA2 /* VariableEditingViewController.swift */; };
+		7A501AFB1E39CBFB008441A0 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A501AFA1E39CBFB008441A0 /* RequestViewController.swift */; };
+		7A501B031E39CFF4008441A0 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A501B011E39CFF4008441A0 /* DataModel.xcdatamodeld */; };
+		7A501B221E39DC0C008441A0 /* PHRequest+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A501B201E39DC0C008441A0 /* PHRequest+CoreDataClass.swift */; };
+		7A501B231E39DC0C008441A0 /* PHRequest+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A501B211E39DC0C008441A0 /* PHRequest+CoreDataProperties.swift */; };
+		7A501B251E39FEC9008441A0 /* MethodPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A501B241E39FEC9008441A0 /* MethodPickerViewController.swift */; };
+		7A501B331E3B2B44008441A0 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A501B321E3B2B44008441A0 /* BookmarksViewController.swift */; };
+		7A501B351E3C7F27008441A0 /* ResponseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A501B341E3C7F27008441A0 /* ResponseViewController.swift */; };
+		7A5491721E3E2EF7001B2BC1 /* HUDView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5491711E3E2EF7001B2BC1 /* HUDView.swift */; };
+		7A5491741E3EEC01001B2BC1 /* ResponseInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5491731E3EEC01001B2BC1 /* ResponseInfoViewController.swift */; };
+		7A5493C01E3F54D9001B2BC1 /* highlight.pack.js in Resources */ = {isa = PBXBuildFile; fileRef = 7A54936E1E3F54D9001B2BC1 /* highlight.pack.js */; };
+		7A5493E01E3F54D9001B2BC1 /* darcula.css in Resources */ = {isa = PBXBuildFile; fileRef = 7A54938F1E3F54D9001B2BC1 /* darcula.css */; };
+		7A5493E31E3F54D9001B2BC1 /* default.css in Resources */ = {isa = PBXBuildFile; fileRef = 7A5493921E3F54D9001B2BC1 /* default.css */; };
+		7AC2BCB81E45A60E00F79412 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC2BCB71E45A60E00F79412 /* Functions.swift */; };
+		7AF514D81E42DB08002E5793 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF514D71E42DB08002E5793 /* PreferencesViewController.swift */; };
+		7AF514DA1E42DB36002E5793 /* HistoryLimitPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF514D91E42DB36002E5793 /* HistoryLimitPickerViewController.swift */; };
+		7AFBDC5D1E4080300004C249 /* EnvironmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBDC5C1E4080300004C249 /* EnvironmentViewController.swift */; };
+		7AFBDC601E4081770004C249 /* PHVariable+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBDC5E1E4081770004C249 /* PHVariable+CoreDataClass.swift */; };
+		7AFBDC611E4081770004C249 /* PHVariable+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFBDC5F1E4081770004C249 /* PHVariable+CoreDataProperties.swift */; };
+		C70C6E630896A685DB176649 /* Pods_PocketHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF5C76FAD54F11190C147B0 /* Pods_PocketHTTP.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3112EE29F1C35BA3D505B356 /* Pods-PocketHTTP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketHTTP.release.xcconfig"; path = "Pods/Target Support Files/Pods-PocketHTTP/Pods-PocketHTTP.release.xcconfig"; sourceTree = "<group>"; };
+		7A0785971E39BA2700C987EF /* PocketHTTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketHTTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A07859A1E39BA2700C987EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7A07859F1E39BA2700C987EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7A0785A11E39BA2700C987EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7A0785A61E39BA2700C987EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A0785AE1E39BE9E00C987EF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7A4B414E1E41986A00D16EA2 /* VariableEditingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariableEditingViewController.swift; sourceTree = "<group>"; };
+		7A501AFA1E39CBFB008441A0 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		7A501B021E39CFF4008441A0 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		7A501B201E39DC0C008441A0 /* PHRequest+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PHRequest+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7A501B211E39DC0C008441A0 /* PHRequest+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PHRequest+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7A501B241E39FEC9008441A0 /* MethodPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodPickerViewController.swift; sourceTree = "<group>"; };
+		7A501B321E3B2B44008441A0 /* BookmarksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+		7A501B341E3C7F27008441A0 /* ResponseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseViewController.swift; sourceTree = "<group>"; };
+		7A5491711E3E2EF7001B2BC1 /* HUDView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUDView.swift; sourceTree = "<group>"; };
+		7A5491731E3EEC01001B2BC1 /* ResponseInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseInfoViewController.swift; sourceTree = "<group>"; };
+		7A54936E1E3F54D9001B2BC1 /* highlight.pack.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = highlight.pack.js; sourceTree = "<group>"; };
+		7A54938F1E3F54D9001B2BC1 /* darcula.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = darcula.css; sourceTree = "<group>"; };
+		7A5493921E3F54D9001B2BC1 /* default.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = default.css; sourceTree = "<group>"; };
+		7AC2BCB71E45A60E00F79412 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		7AF514D71E42DB08002E5793 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		7AF514D91E42DB36002E5793 /* HistoryLimitPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryLimitPickerViewController.swift; sourceTree = "<group>"; };
+		7AFBDC5C1E4080300004C249 /* EnvironmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentViewController.swift; sourceTree = "<group>"; };
+		7AFBDC5E1E4081770004C249 /* PHVariable+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PHVariable+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7AFBDC5F1E4081770004C249 /* PHVariable+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PHVariable+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E3B6C9DF2AF16B88D70A9BD7 /* Pods-PocketHTTP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketHTTP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PocketHTTP/Pods-PocketHTTP.debug.xcconfig"; sourceTree = "<group>"; };
+		EEF5C76FAD54F11190C147B0 /* Pods_PocketHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketHTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7A0785941E39BA2700C987EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C70C6E630896A685DB176649 /* Pods_PocketHTTP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06C1411F62BEDC65E79A91BB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEF5C76FAD54F11190C147B0 /* Pods_PocketHTTP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A07858E1E39BA2600C987EF = {
+			isa = PBXGroup;
+			children = (
+				7A0785991E39BA2700C987EF /* PocketHTTP */,
+				7A0785981E39BA2700C987EF /* Products */,
+				7A0785AE1E39BE9E00C987EF /* Podfile */,
+				901B419EBA7ACD9321BED497 /* Pods */,
+				06C1411F62BEDC65E79A91BB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7A0785981E39BA2700C987EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7A0785971E39BA2700C987EF /* PocketHTTP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7A0785991E39BA2700C987EF /* PocketHTTP */ = {
+			isa = PBXGroup;
+			children = (
+				7A07859A1E39BA2700C987EF /* AppDelegate.swift */,
+				7A5491711E3E2EF7001B2BC1 /* HUDView.swift */,
+				7AC2BCB71E45A60E00F79412 /* Functions.swift */,
+				7A501AF91E39CBFB008441A0 /* Request */,
+				7A501B301E3B2AF8008441A0 /* Bookmarks */,
+				7A501B311E3B2AF8008441A0 /* Preferences */,
+				7A07859E1E39BA2700C987EF /* Main.storyboard */,
+				7A0785A11E39BA2700C987EF /* Assets.xcassets */,
+				7A501B001E39CFB7008441A0 /* Models */,
+				7A5491751E3F1D6F001B2BC1 /* Resources */,
+				7A0785A61E39BA2700C987EF /* Info.plist */,
+			);
+			path = PocketHTTP;
+			sourceTree = "<group>";
+		};
+		7A501AF91E39CBFB008441A0 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				7A501AFA1E39CBFB008441A0 /* RequestViewController.swift */,
+				7A501B341E3C7F27008441A0 /* ResponseViewController.swift */,
+				7A501B241E39FEC9008441A0 /* MethodPickerViewController.swift */,
+				7A5491731E3EEC01001B2BC1 /* ResponseInfoViewController.swift */,
+				7AFBDC5C1E4080300004C249 /* EnvironmentViewController.swift */,
+				7A4B414E1E41986A00D16EA2 /* VariableEditingViewController.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		7A501B001E39CFB7008441A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A501B201E39DC0C008441A0 /* PHRequest+CoreDataClass.swift */,
+				7A501B211E39DC0C008441A0 /* PHRequest+CoreDataProperties.swift */,
+				7AFBDC5E1E4081770004C249 /* PHVariable+CoreDataClass.swift */,
+				7AFBDC5F1E4081770004C249 /* PHVariable+CoreDataProperties.swift */,
+				7A501B011E39CFF4008441A0 /* DataModel.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A501B301E3B2AF8008441A0 /* Bookmarks */ = {
+			isa = PBXGroup;
+			children = (
+				7A501B321E3B2B44008441A0 /* BookmarksViewController.swift */,
+			);
+			path = Bookmarks;
+			sourceTree = "<group>";
+		};
+		7A501B311E3B2AF8008441A0 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				7AF514D71E42DB08002E5793 /* PreferencesViewController.swift */,
+				7AF514D91E42DB36002E5793 /* HistoryLimitPickerViewController.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		7A5491751E3F1D6F001B2BC1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A54936D1E3F54D9001B2BC1 /* highlight.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7A54936D1E3F54D9001B2BC1 /* highlight.js */ = {
+			isa = PBXGroup;
+			children = (
+				7A54936E1E3F54D9001B2BC1 /* highlight.pack.js */,
+				7A54936F1E3F54D9001B2BC1 /* styles */,
+			);
+			path = highlight.js;
+			sourceTree = "<group>";
+		};
+		7A54936F1E3F54D9001B2BC1 /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				7A54938F1E3F54D9001B2BC1 /* darcula.css */,
+				7A5493921E3F54D9001B2BC1 /* default.css */,
+			);
+			path = styles;
+			sourceTree = "<group>";
+		};
+		901B419EBA7ACD9321BED497 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3B6C9DF2AF16B88D70A9BD7 /* Pods-PocketHTTP.debug.xcconfig */,
+				3112EE29F1C35BA3D505B356 /* Pods-PocketHTTP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7A0785961E39BA2700C987EF /* PocketHTTP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A0785A91E39BA2700C987EF /* Build configuration list for PBXNativeTarget "PocketHTTP" */;
+			buildPhases = (
+				4A2ADE63BEF20DC835EFFF89 /* [CP] Check Pods Manifest.lock */,
+				7A0785931E39BA2700C987EF /* Sources */,
+				7A0785941E39BA2700C987EF /* Frameworks */,
+				7A0785951E39BA2700C987EF /* Resources */,
+				4541B401AA5CCE3F6AF6571F /* [CP] Embed Pods Frameworks */,
+				5665EB7CF0CE04CB4253E8BF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketHTTP;
+			productName = PocketHTTP;
+			productReference = 7A0785971E39BA2700C987EF /* PocketHTTP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7A07858F1E39BA2600C987EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "朱子秋";
+				TargetAttributes = {
+					7A0785961E39BA2700C987EF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 85TENPU7RF;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7A0785921E39BA2600C987EF /* Build configuration list for PBXProject "PocketHTTP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7A07858E1E39BA2600C987EF;
+			productRefGroup = 7A0785981E39BA2700C987EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A0785961E39BA2700C987EF /* PocketHTTP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7A0785951E39BA2700C987EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0785AF1E39BE9E00C987EF /* Podfile in Resources */,
+				7A5493E01E3F54D9001B2BC1 /* darcula.css in Resources */,
+				7A5493C01E3F54D9001B2BC1 /* highlight.pack.js in Resources */,
+				7A5493E31E3F54D9001B2BC1 /* default.css in Resources */,
+				7A0785A21E39BA2700C987EF /* Assets.xcassets in Resources */,
+				7A0785A01E39BA2700C987EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4541B401AA5CCE3F6AF6571F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PocketHTTP/Pods-PocketHTTP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A2ADE63BEF20DC835EFFF89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5665EB7CF0CE04CB4253E8BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PocketHTTP/Pods-PocketHTTP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A0785931E39BA2700C987EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AF514DA1E42DB36002E5793 /* HistoryLimitPickerViewController.swift in Sources */,
+				7A501B331E3B2B44008441A0 /* BookmarksViewController.swift in Sources */,
+				7A501AFB1E39CBFB008441A0 /* RequestViewController.swift in Sources */,
+				7AFBDC5D1E4080300004C249 /* EnvironmentViewController.swift in Sources */,
+				7A501B031E39CFF4008441A0 /* DataModel.xcdatamodeld in Sources */,
+				7A501B251E39FEC9008441A0 /* MethodPickerViewController.swift in Sources */,
+				7AFBDC601E4081770004C249 /* PHVariable+CoreDataClass.swift in Sources */,
+				7A07859B1E39BA2700C987EF /* AppDelegate.swift in Sources */,
+				7A5491721E3E2EF7001B2BC1 /* HUDView.swift in Sources */,
+				7A501B221E39DC0C008441A0 /* PHRequest+CoreDataClass.swift in Sources */,
+				7A4B414F1E41986A00D16EA2 /* VariableEditingViewController.swift in Sources */,
+				7AC2BCB81E45A60E00F79412 /* Functions.swift in Sources */,
+				7AF514D81E42DB08002E5793 /* PreferencesViewController.swift in Sources */,
+				7A501B351E3C7F27008441A0 /* ResponseViewController.swift in Sources */,
+				7AFBDC611E4081770004C249 /* PHVariable+CoreDataProperties.swift in Sources */,
+				7A501B231E39DC0C008441A0 /* PHRequest+CoreDataProperties.swift in Sources */,
+				7A5491741E3EEC01001B2BC1 /* ResponseInfoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7A07859E1E39BA2700C987EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A07859F1E39BA2700C987EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7A0785A71E39BA2700C987EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A0785A81E39BA2700C987EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7A0785AA1E39BA2700C987EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3B6C9DF2AF16B88D70A9BD7 /* Pods-PocketHTTP.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85TENPU7RF;
+				INFOPLIST_FILE = PocketHTTP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akikosoft.PocketHTTP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7A0785AB1E39BA2700C987EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3112EE29F1C35BA3D505B356 /* Pods-PocketHTTP.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 85TENPU7RF;
+				INFOPLIST_FILE = PocketHTTP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akikosoft.PocketHTTP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7A0785921E39BA2600C987EF /* Build configuration list for PBXProject "PocketHTTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A0785A71E39BA2700C987EF /* Debug */,
+				7A0785A81E39BA2700C987EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7A0785A91E39BA2700C987EF /* Build configuration list for PBXNativeTarget "PocketHTTP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A0785AA1E39BA2700C987EF /* Debug */,
+				7A0785AB1E39BA2700C987EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7A501B011E39CFF4008441A0 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7A501B021E39CFF4008441A0 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 7A501B021E39CFF4008441A0 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7A07858F1E39BA2600C987EF /* Project object */;
+}

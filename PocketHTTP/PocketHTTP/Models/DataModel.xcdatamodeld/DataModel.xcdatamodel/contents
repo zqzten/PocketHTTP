@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="PHRequest" representedClassName="PHRequest" syncable="YES">
+        <attribute name="baseURL" attributeType="String" syncable="YES"/>
+        <attribute name="body" attributeType="Transformable" syncable="YES"/>
+        <attribute name="headers" attributeType="Transformable" syncable="YES"/>
+        <attribute name="method" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parameters" attributeType="Transformable" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+    </entity>
+    <entity name="PHVariable" representedClassName="PHVariable" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="value" attributeType="String" syncable="YES"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="PHRequest" positionX="144" positionY="27" width="128" height="150"/>
+        <element name="PHVariable" positionX="144" positionY="81" width="128" height="75"/>
+    </elements>
+</model>
