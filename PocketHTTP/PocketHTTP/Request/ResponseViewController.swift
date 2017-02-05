@@ -33,7 +33,7 @@ class ResponseViewController: UIViewController {
                 let jsonObject = try JSONSerialization.jsonObject(with: response.result.value!, options: [])
                 contentData = try JSONSerialization.data(withJSONObject: jsonObject, options: [.prettyPrinted])
             } catch {}
-            contentString = String(data: contentData, encoding: .utf8)!
+            contentString = String(data: contentData, encoding: .utf8) ?? "Unable to decode response to UTF-8 string"
             // escape HTML characters
             contentString = contentString.replacingOccurrences(of: "<", with: "&lt;").replacingOccurrences(of: ">", with: "&gt;").replacingOccurrences(of: "&", with: "&amp;")
             // apply code highlight
