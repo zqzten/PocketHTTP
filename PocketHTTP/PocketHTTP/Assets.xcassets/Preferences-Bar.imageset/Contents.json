@@ -2,6 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "Preferences-Bar.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
       "filename" : "Preferences-Bar@2x.png",
       "scale" : "2x"
     },

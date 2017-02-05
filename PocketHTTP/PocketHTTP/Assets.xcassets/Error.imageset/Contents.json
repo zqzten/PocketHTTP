@@ -2,6 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "Error.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
       "filename" : "Error@2x.png",
       "scale" : "2x"
     },
