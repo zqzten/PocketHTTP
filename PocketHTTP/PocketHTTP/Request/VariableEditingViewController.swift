@@ -50,6 +50,7 @@ class VariableEditingViewController: UITableViewController {
             valueTextField.text = variable.value
         } else {
             title = "Add Variable"
+            saveButton.isEnabled = false
         }
     }
 

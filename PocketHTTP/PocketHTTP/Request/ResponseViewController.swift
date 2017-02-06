@@ -14,15 +14,15 @@ class ResponseViewController: UIViewController {
     
     @IBOutlet weak var styleControl: UISegmentedControl!
 
-    var resultWebView: WKWebView!
+    private var resultWebView: WKWebView!
     var response: DataResponse<Data>!
-    var useDarkTheme: Bool { return UserDefaults.standard.bool(forKey: "UseDarkTheme") }
+    private var useDarkTheme: Bool { return UserDefaults.standard.bool(forKey: "UseDarkTheme") }
     
     @IBAction func changeStyle(_ sender: UISegmentedControl) {
         loadResult()
     }
     
-    func loadResult() {
+    private func loadResult() {
         let baseURL = URL(fileURLWithPath: Bundle.main.bundlePath)
         switch styleControl.selectedSegmentIndex {
         case 0:

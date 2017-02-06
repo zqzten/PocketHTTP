@@ -259,7 +259,7 @@
                                 <segue destination="62j-6q-Kx2" kind="unwind" identifier="EditedVariable" unwindAction="variableEditorDidEditVariable:" id="Bef-pd-MDh"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="save" id="SGy-lV-FaU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="SGy-lV-FaU">
                             <connections>
                                 <action selector="save:" destination="mtI-tj-cOp" id="eME-aL-i4u"/>
                             </connections>
@@ -396,7 +396,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Akh-fH-6Fy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1192.8" y="-312.59370314842579"/>
+            <point key="canvasLocation" x="1193" y="-312"/>
         </scene>
         <!--Method Picker View Controller-->
         <scene sceneID="dgL-5n-rjc">

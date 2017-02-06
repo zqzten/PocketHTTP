@@ -11,7 +11,7 @@ import UIKit
 class ResponseInfoViewController: UITableViewController {
 
     var responseInfo: HTTPURLResponse!
-    lazy var orderedHeaders: [(key: String, value: String)] = {
+    private lazy var orderedHeaders: [(key: String, value: String)] = {
         var orderedHeaders = [(key: String, value: String)]()
         for (key, value) in self.responseInfo.allHeaderFields {
             orderedHeaders.append((key: key as! String, value: value as! String))

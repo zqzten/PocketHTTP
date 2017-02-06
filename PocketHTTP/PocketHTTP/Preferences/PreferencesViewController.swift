@@ -17,9 +17,9 @@ class PreferencesViewController: UITableViewController {
     @IBOutlet weak var historyLimitLabel: UILabel!
     
     var managedObjectContext: NSManagedObjectContext!
-    lazy var userDefaults = UserDefaults.standard
+    private lazy var userDefaults = UserDefaults.standard
     
-    var historyLimit: Int! {
+    private var historyLimit: Int! {
         didSet {
             if historyLimit != 0 {
                 let fetchRequest: NSFetchRequest<PHRequest> = PHRequest.fetchRequest()

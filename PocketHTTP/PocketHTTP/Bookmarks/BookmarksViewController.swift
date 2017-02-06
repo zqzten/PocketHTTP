@@ -16,7 +16,7 @@ class BookmarksViewController: UITableViewController {
     var requestViewController: RequestViewController!
     var managedObjectContext: NSManagedObjectContext!
     
-    lazy var fetchedHistoryController: NSFetchedResultsController<PHRequest> = {
+    private lazy var fetchedHistoryController: NSFetchedResultsController<PHRequest> = {
         let fetchRequest: NSFetchRequest<PHRequest> = PHRequest.fetchRequest()
         fetchRequest.predicate = NSPredicate(format: "name == nil")
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "time", ascending: false)]
@@ -25,7 +25,7 @@ class BookmarksViewController: UITableViewController {
         fetchedHistoryController.delegate = self
         return fetchedHistoryController
     }()
-    lazy var fetchedFavoritesController: NSFetchedResultsController<PHRequest> = {
+    private lazy var fetchedFavoritesController: NSFetchedResultsController<PHRequest> = {
         let fetchRequest: NSFetchRequest<PHRequest> = PHRequest.fetchRequest()
         fetchRequest.predicate = NSPredicate(format: "name != nil")
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
@@ -35,10 +35,10 @@ class BookmarksViewController: UITableViewController {
         return fetchedFavoritesController
     }()
     
-    var activeFetchedResultsController: NSFetchedResultsController<PHRequest> {
+    fileprivate var activeFetchedResultsController: NSFetchedResultsController<PHRequest> {
         return typeControl.selectedSegmentIndex == 0 ? fetchedHistoryController : fetchedFavoritesController
     }
-    var inactiveFetchedResultsController: NSFetchedResultsController<PHRequest> {
+    private var inactiveFetchedResultsController: NSFetchedResultsController<PHRequest> {
         return typeControl.selectedSegmentIndex == 0 ? fetchedFavoritesController : fetchedHistoryController
     }
     
@@ -49,7 +49,7 @@ class BookmarksViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    func performFetch(with fetchedResultsController: NSFetchedResultsController<PHRequest>) {
+    private func performFetch(with fetchedResultsController: NSFetchedResultsController<PHRequest>) {
         do {
             try fetchedResultsController.performFetch()
         } catch {
@@ -57,7 +57,7 @@ class BookmarksViewController: UITableViewController {
         }
     }
     
-    func saveContext() {
+    private func saveContext() {
         do {
             try managedObjectContext.save()
         } catch {
@@ -65,7 +65,7 @@ class BookmarksViewController: UITableViewController {
         }
     }
     
-    func configureCell(_ cell: UITableViewCell, withRequest request: PHRequest) {
+    fileprivate func configureCell(_ cell: UITableViewCell, withRequest request: PHRequest) {
         if typeControl.selectedSegmentIndex == 0 {
             cell.textLabel!.text = request.url
             cell.detailTextLabel!.text = request.method

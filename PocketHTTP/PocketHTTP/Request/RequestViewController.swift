@@ -16,8 +16,8 @@ class RequestViewController: UITableViewController {
     @IBOutlet weak var sendButton: UIBarButtonItem!
     
     var managedObjectContext: NSManagedObjectContext!
-    lazy var userDefaults = UserDefaults.standard
-    var sessionManager: SessionManager!
+    private lazy var userDefaults = UserDefaults.standard
+    private var sessionManager: SessionManager!
     
     var request: PHRequest? {
         // load stored request
@@ -32,23 +32,23 @@ class RequestViewController: UITableViewController {
             }
         }
     }
-    var response: DataResponse<Data>!
+    private var response: DataResponse<Data>!
     
-    var urlTextField: UITextField { return tableView.cellForRow(at: IndexPath(row: 0, section: 0))!.viewWithTag(1002) as! UITextField }
-    var textFieldNeedRecover = false
-    var lastActiveTextField: UITextField?
+    fileprivate var urlTextField: UITextField { return tableView.cellForRow(at: IndexPath(row: 0, section: 0))!.viewWithTag(1002) as! UITextField }
+    private var textFieldNeedRecover = false
+    fileprivate var lastActiveTextField: UITextField?
     var variableToInsert: PHVariable!
     
-    var baseURL = ""
-    var method = PHMethod.GET
-    var parameters = [["", ""]] {
+    fileprivate var baseURL = ""
+    fileprivate var method = PHMethod.GET
+    fileprivate var parameters = [["", ""]] {
         didSet {
             // update URL simultaneously
             urlTextField.text = makeURL(onBase: baseURL, withPara: parameters)
         }
     }
-    var headers = [["", ""]]
-    var body = [["", ""]]
+    fileprivate var headers = [["", ""]]
+    fileprivate var body = [["", ""]]
     
     @IBAction func send() {
         // end URL editing
@@ -154,7 +154,7 @@ class RequestViewController: UITableViewController {
     
     @IBAction func environmentViewerDidViewEnvironment(_ segue: UIStoryboardSegue) {}
     
-    func applyEvironmentVariables(_ raw: String) -> String {
+    private func applyEvironmentVariables(_ raw: String) -> String {
         var applied = raw
         let regex = try! NSRegularExpression(pattern: "\\{\\{.+\\}\\}", options: [])
         let matches = regex.matches(in: raw, options: [], range: NSRange(location: 0, length: raw.characters.count))
@@ -176,7 +176,7 @@ class RequestViewController: UITableViewController {
         return applied
     }
     
-    func convertToDict(_ parameters: [[String]]) -> [String: String] {
+    private func convertToDict(_ parameters: [[String]]) -> [String: String] {
         var dict = [String: String]()
         for parameter in parameters {
             if parameter[0] != "" || parameter[1] != "" {
@@ -186,7 +186,7 @@ class RequestViewController: UITableViewController {
         return dict
     }
     
-    func promptError(withText text: String) {
+    private func promptError(withText text: String) {
         let errorHUD = HUDView.hud(inView: navigationController!.view, animated: true, withText: text, andImage: #imageLiteral(resourceName: "Error"))
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
             errorHUD.hide()

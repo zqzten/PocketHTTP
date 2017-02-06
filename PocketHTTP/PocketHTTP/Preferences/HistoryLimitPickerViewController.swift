@@ -10,9 +10,9 @@ import UIKit
 
 class HistoryLimitPickerViewController: UITableViewController {
 
-    let historyLimits = [15, 30, 50, 100, 0]
+    private let historyLimits = [15, 30, 50, 100, 0]
     var selectedHistoryLimit: Int!
-    var selectedIndexPath: IndexPath!
+    private var selectedIndexPath: IndexPath!
     
     override func viewDidLoad() {
         super.viewDidLoad()

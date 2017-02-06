@@ -11,7 +11,7 @@ import UIKit
 class MethodPickerViewController: UITableViewController {
 
     var selectedMethod: PHMethod!
-    var selectedIndexPath: IndexPath!
+    private var selectedIndexPath: IndexPath!
     
     override func viewDidLoad() {
         super.viewDidLoad()

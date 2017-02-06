@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    lazy var persistentContainer: NSPersistentContainer = {
+    private lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "DataModel")
         container.loadPersistentStores { storeDescription, error in
             if let error = error {
@@ -25,7 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return container
     }()
 
-    lazy var managedObjectContext: NSManagedObjectContext = self.persistentContainer.viewContext
+    private lazy var managedObjectContext: NSManagedObjectContext = self.persistentContainer.viewContext
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         

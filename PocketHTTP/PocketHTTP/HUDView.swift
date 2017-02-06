@@ -10,9 +10,9 @@ import UIKit
 
 class HUDView: UIView {
     
-    var text: String!
-    var image: UIImage!
-    var activityIndicator: UIActivityIndicatorView?
+    private var text: String!
+    private var image: UIImage!
+    private var activityIndicator: UIActivityIndicatorView?
     
     // make an HUD view with text and image
     class func hud(inView view: UIView, animated: Bool, withText text: String, andImage image: UIImage) -> HUDView {

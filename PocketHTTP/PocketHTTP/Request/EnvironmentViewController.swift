@@ -12,7 +12,7 @@ import CoreData
 class EnvironmentViewController: UITableViewController {
 
     var managedObjectContext: NSManagedObjectContext!
-    lazy var fetchedResultsController: NSFetchedResultsController<PHVariable> = {
+    fileprivate lazy var fetchedResultsController: NSFetchedResultsController<PHVariable> = {
         let fetchRequest: NSFetchRequest<PHVariable> = PHVariable.fetchRequest()
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
         fetchRequest.fetchBatchSize = 20
@@ -23,7 +23,7 @@ class EnvironmentViewController: UITableViewController {
     
     @IBAction func variableEditorDidEditVariable(_ segue: UIStoryboardSegue) {}
     
-    func saveContext() {
+    private func saveContext() {
         do {
             try managedObjectContext.save()
         } catch {
@@ -31,7 +31,7 @@ class EnvironmentViewController: UITableViewController {
         }
     }
     
-    func configureCell(_ cell: UITableViewCell, withVariable variable: PHVariable) {
+    fileprivate func configureCell(_ cell: UITableViewCell, withVariable variable: PHVariable) {
         cell.textLabel!.text = variable.name
         cell.detailTextLabel!.text = variable.value
     }
