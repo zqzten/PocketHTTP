@@ -50,7 +50,7 @@ class RequestViewController: UITableViewController {
     fileprivate var headers = [["", ""]]
     fileprivate var body = [["", ""]]
     
-    @IBAction func send() {
+    @IBAction private func send() {
         // end URL editing
         urlTextField.resignFirstResponder()
         
@@ -135,15 +135,15 @@ class RequestViewController: UITableViewController {
         }
     }
     
-    @IBAction func methodPickerDidPickMethod(_ segue: UIStoryboardSegue) {
+    @IBAction private func methodPickerDidPickMethod(_ segue: UIStoryboardSegue) {
         let controller = segue.source as! MethodPickerViewController
         method = controller.selectedMethod
         tableView.cellForRow(at: IndexPath(row: 0, section: 1))?.textLabel!.text = method.rawValue
     }
     
-    @IBAction func responseViewerDidViewResponse(_ segue: UIStoryboardSegue) {}
+    @IBAction private func responseViewerDidViewResponse(_ segue: UIStoryboardSegue) {}
     
-    @IBAction func environmentViewerDidPickVariable(_ segue: UIStoryboardSegue) {
+    @IBAction private func environmentViewerDidPickVariable(_ segue: UIStoryboardSegue) {
         if let textField = lastActiveTextField {
             textField.text! += "{{\(variableToInsert.name)}}"
             if textField == urlTextField {
@@ -152,7 +152,7 @@ class RequestViewController: UITableViewController {
         }
     }
     
-    @IBAction func environmentViewerDidViewEnvironment(_ segue: UIStoryboardSegue) {}
+    @IBAction private func environmentViewerDidViewEnvironment(_ segue: UIStoryboardSegue) {}
     
     private func applyEvironmentVariables(_ raw: String) -> String {
         var applied = raw

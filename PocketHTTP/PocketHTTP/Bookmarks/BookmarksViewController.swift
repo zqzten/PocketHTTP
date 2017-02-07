@@ -11,7 +11,7 @@ import CoreData
 
 class BookmarksViewController: UITableViewController {
 
-    @IBOutlet weak var typeControl: UISegmentedControl!
+    @IBOutlet private weak var typeControl: UISegmentedControl!
     
     var requestViewController: RequestViewController!
     var managedObjectContext: NSManagedObjectContext!
@@ -42,7 +42,7 @@ class BookmarksViewController: UITableViewController {
         return typeControl.selectedSegmentIndex == 0 ? fetchedFavoritesController : fetchedHistoryController
     }
     
-    @IBAction func changeType(_ sender: UISegmentedControl) {
+    @IBAction private func changeType(_ sender: UISegmentedControl) {
         inactiveFetchedResultsController.delegate = nil
         activeFetchedResultsController.delegate = self
         performFetch(with: activeFetchedResultsController)

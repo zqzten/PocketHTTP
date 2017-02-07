@@ -12,13 +12,13 @@ import Alamofire
 
 class ResponseViewController: UIViewController {
     
-    @IBOutlet weak var styleControl: UISegmentedControl!
+    @IBOutlet private weak var styleControl: UISegmentedControl!
 
     private var resultWebView: WKWebView!
     var response: DataResponse<Data>!
     private var useDarkTheme: Bool { return UserDefaults.standard.bool(forKey: "UseDarkTheme") }
     
-    @IBAction func changeStyle(_ sender: UISegmentedControl) {
+    @IBAction private func changeStyle(_ sender: UISegmentedControl) {
         loadResult()
     }
     

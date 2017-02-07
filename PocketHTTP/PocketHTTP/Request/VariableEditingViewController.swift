@@ -11,14 +11,14 @@ import CoreData
 
 class VariableEditingViewController: UITableViewController {
 
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var valueTextField: UITextField!
-    @IBOutlet weak var saveButton: UIBarButtonItem!
+    @IBOutlet fileprivate weak var nameTextField: UITextField!
+    @IBOutlet fileprivate weak var valueTextField: UITextField!
+    @IBOutlet fileprivate weak var saveButton: UIBarButtonItem!
     
     var managedObjectContext: NSManagedObjectContext!
     var variable: PHVariable?
     
-    @IBAction func save(_ sender: UIBarButtonItem) {
+    @IBAction private func save(_ sender: UIBarButtonItem) {
         let variableToSave = variable == nil ? PHVariable(context: managedObjectContext) : variable!
         variableToSave.name = nameTextField.text!
         variableToSave.value = valueTextField.text!

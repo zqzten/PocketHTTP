@@ -21,7 +21,7 @@ class EnvironmentViewController: UITableViewController {
         return fetchedResultsController
     }()
     
-    @IBAction func variableEditorDidEditVariable(_ segue: UIStoryboardSegue) {}
+    @IBAction private func variableEditorDidEditVariable(_ segue: UIStoryboardSegue) {}
     
     private func saveContext() {
         do {
