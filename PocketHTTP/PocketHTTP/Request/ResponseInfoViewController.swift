@@ -18,6 +18,12 @@ class ResponseInfoViewController: UITableViewController {
         }
         return orderedHeaders
     }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        tableView.tableFooterView = UIView()
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 2

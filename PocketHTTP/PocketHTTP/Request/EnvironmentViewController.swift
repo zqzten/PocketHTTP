@@ -38,12 +38,14 @@ class EnvironmentViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         do {
             try fetchedResultsController.performFetch()
         } catch {
             fatalError("Could not fetch data: \(error)")
         }
+        
+        tableView.tableFooterView = UIView()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

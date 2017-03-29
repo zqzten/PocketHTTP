@@ -23,6 +23,8 @@ class HistoryLimitPickerViewController: UITableViewController {
                 break
             }
         }
+        
+        tableView.tableFooterView = UIView()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
