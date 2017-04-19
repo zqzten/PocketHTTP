@@ -12,7 +12,7 @@ A lightweight iOS app to let you test your HTTP APIs easily on the go, somewhat 
 
 * **Environment variables**
 
-![Environment Variables](https://github.com/AkikoZ/PocketHTTP/blob/master/screenshots/Environment Variables.png)
+![Environment Variables](https://github.com/AkikoZ/PocketHTTP/blob/master/screenshots/Environment%20Variables.png)
 
 * **Comprehensive response viewing**
 
