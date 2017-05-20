@@ -461,7 +461,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PocketHTTP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.akikosoft.PocketHTTP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akikoz.PocketHTTP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -478,7 +478,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = PocketHTTP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.akikosoft.PocketHTTP;
+				PRODUCT_BUNDLE_IDENTIFIER = com.akikoz.PocketHTTP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
