@@ -6,23 +6,23 @@ A lightweight iOS app to let you test your HTTP APIs easily on the go, somewhat 
 
 * **Fully customized HTTP request**
 
-![Request](https://github.com/AkikoZ/PocketHTTP/blob/master/screenshots/Request.png)
+![Request](screenshots/Request.png)
 
 * **Request bookmarks**
 
-![Bookmarks-History](https://github.com/AkikoZ/PocketHTTP/blob/master/screenshots/Bookmarks-History.png)
-![Bookmarks-Favorites](https://github.com/AkikoZ/PocketHTTP/blob/master/screenshots/Bookmarks-Favorites.png)
+![Bookmarks-History](screenshots/Bookmarks-History.png)
+![Bookmarks-Favorites](screenshots/Bookmarks-Favorites.png)
 
 * **Environment variables**
 
-![Environment Variables](https://github.com/AkikoZ/PocketHTTP/blob/master/screenshots/Environment%20Variables.png)
+![Environment Variables](screenshots/Environment%20Variables.png)
 
 * **Comprehensive response viewing**
 
-![Response-Pretty](https://github.com/AkikoZ/PocketHTTP/blob/master/screenshots/Response-Pretty.png)
-![Response-Info](https://github.com/AkikoZ/PocketHTTP/blob/master/screenshots/Response-Raw.png)
-![Response-Preview](https://github.com/AkikoZ/PocketHTTP/blob/master/screenshots/Response-Preview.png)
-![Response-Info](https://github.com/AkikoZ/PocketHTTP/blob/master/screenshots/Response-Info.png)
+![Response-Pretty](screenshots/Response-Pretty.png)
+![Response-Info](screenshots/Response-Raw.png)
+![Response-Preview](screenshots/Response-Preview.png)
+![Response-Info](screenshots/Response-Info.png)
 
 ## Installing
 
